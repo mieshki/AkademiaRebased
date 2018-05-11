@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Zadanie zero - Rebased.pl/akademia.html</title>
+        <meta name="author" content="Mieszko Dziadowiec" />     
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body>
+        <h4>Wprowadź numer telefonu za pomocą cyfr, liter lub cyfr i liter w formacie XXX-XXX-XXX.</h4>
+        <input id="number" type="text" />
+        <input type="Submit" value="Przekonwertuj!" onclick="readInput();" /><br />
+        <span id="result"></span><br /><br />
+        
+        
+        <button onclick="showHide();">Treść zadania - spoiler</button>
+        <div id="exercise-info">
+            <fieldset>
+            <legend>Zadanie zero – klawiaturowy tłumacz</legend>
+                <textarea>
+Przypomnijmy sobie jak wygląda tradycyjna klawiatura telefonu:
+-------------------
+|  1  |  2  |  3  |
+|     | ABC | DEF |
+-------------------
+|  4  |  5  |  6  |
+| GHI | JKL | MNO |
+-------------------
+|  7  |  8  |  9  |
+| PQRS| TUV | WXYZ|
+-------------------
+|  *  |  0  |  #  |
+|     |     |     |
+-------------------
+      
+Zdarza się, że niektórzy podają numer telefonu używając liter spod podanych cyfr. Napisz program który pomoże w wybieraniu takiego numeru.
+Twój program:
+przyjmie dokładnie jeden parametr z linii komend (słowo do przetłumaczenia),
+zwróci numer telefonu który należy wybrać, w takim samym formacie jak podany wcześniej numer.
+Przykład: 
+$ ruby phone.rb 1-800-FLOWERS
+1-800-3569377
+$ ruby phone.rb 1-800-800
+1-800-800
+$ ruby phone.rb
+Proper usage:
+phone.rb number
+        
+Rozwiązanie musi być w pełni samodzielne. W idealnej sytuacji otestuj je również automatycznie.
+Uwaga! Język programowania zadania zerowego może być w pełni dowolny, miej jednak na uwadze, że zadania w trakcie Akademii Rebased będziesz oddawać w wybranych przez nas technologiach (Ruby, HTML, CSS).
+                </textarea>
+            </fieldset>
+       </div> 
+        <script src="js/main.js"></script>
+        <script src="js/spoiler.js"></script>
+    </body>
+</html>

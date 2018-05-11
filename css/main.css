@@ -1,0 +1,14 @@
+textarea{
+    width: 600px;
+    height: 550px;
+    resize: none;
+}
+
+fieldset{
+    width: 600px;
+    height: 570px;
+}
+
+#exercise-info{
+    display: none;
+}
